@@ -58,5 +58,10 @@ namespace App
             // store the state from the last frame so it can be compared to the next frame's state to check if it has changed
             pressedLastFrame = pressedDown;
         }
+
+        private void OnDisable()
+        {
+            Release();
+        }
     }
 }
